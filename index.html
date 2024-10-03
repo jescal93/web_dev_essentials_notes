@@ -3,26 +3,103 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pet Bakery</title>
+    <title>Forms</title>
 </head>
 <body>
-    <div>
-        <h1>
-            Welcome to Our Pet Bakery
-        </h1>
-            <p>
-                We offer a variety of healthy and delicious treats for your pets.
-            </p>
-    </div>
-    <div>
-        <h2>
-            Our Products
-        </h2>
-            <ul>
-                <li>Dog Biscuits</li>
-                <li>Cat Treats</li>
-                <li>Bird Seed Bars</li>
-            </ul>
-    </div>
+    <form>
+        <input type="text" name="username" placeholder="Enter your name">
+        <button type="submit">Submit</button>
+    </form>
+
+    <form>
+        <input type="reset" value="Reset">
+    </form>
+
+    <form>
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username" placeholder="Enter your username">
+      
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" placeholder="Enter your email">
+      
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" placeholder="Enter your password">
+    </form>
+
+    <form>
+        <p>Select your gender:</p>
+        <input type="radio" id="male" name="gender" value="male">
+        <label for="male">Male</label>
+      
+        <input type="radio" id="female" name="gender" value="female">
+        <label for="female">Female</label>
+      </form>
+
+      <form>
+        <label for="age">Age:</label>
+        <input type="number" id="age" name="age" min="18" max="100" placeholder="Enter your age">
+      
+        <label for="dob">Date of Birth:</label>
+        <input type="date" id="dob" name="dob">
+      </form>
+
+      <form>
+        <p>Select your hobbies:</p>
+        <input type="checkbox" id="reading" name="hobbies" value="reading">
+        <label for="reading">Reading</label>
+      
+        <input type="checkbox" id="sports" name="hobbies" value="sports">
+        <label for="sports">Sports</label>
+      </form>
+
+      <form>
+        <label for="country">Select your country:</label>
+        <select id="country" name="country">
+          <option value="usa">United States</option>
+          <option value="canada">Canada</option>
+          <option value="uk">United Kingdom</option>
+        </select>
+      </form>
+
+      <form>
+        <label for="fruits">Select your favorite fruits:</label>
+        <select id="fruits" name="fruits" multiple>
+          <option value="apple">Apple</option>
+          <option value="banana">Banana</option>
+          <option value="orange">Orange</option>
+        </select>
+      </form>
+
+      <form>
+        <fieldset>
+          <legend>Contact Information</legend>
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="name">
+          
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email">
+        </fieldset>
+      </form>
+
+      <form>
+        <label for="message">Your message:</label>
+        <textarea id="message" name="message" rows="4" cols="50" placeholder="Enter your message"></textarea>
+      </form>
+
+      <form>
+        <input type="hidden" name="user_id" value="12345">
+        <input type="submit" value="Submit">
+      </form>
+
+      <form>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+        <input type="submit" value="Submit">
+      </form>
+
+      <label for="username">Username:</label>
+        <input type="text" id="username" name="username">
+        <input type="text" aria-label="Search" placeholder="Search...">
+      
 </body>
 </html>
